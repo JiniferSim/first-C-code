@@ -49,10 +49,12 @@ void Pokemon::Attack()
 
 void Pokemon::PassOut()
 {
+
 }
 
 void Pokemon::Heal()
 {
+
 }
 
 Pokemon::Pokemon(string name, string id)
