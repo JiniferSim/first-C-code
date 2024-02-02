@@ -1,4 +1,6 @@
 #include "Pokemon.h"
+#include "Ability.h"
+#include "Ability.cpp"
 void Pokemon::DisplayPokemonInfo()
 {
 	cout << "Name: " << mName << endl;
@@ -35,26 +37,56 @@ void Pokemon::TakeDamage(int damage)
 	if (!inPokeball)
 	{
 		mLifePoints -= damage;
+		if (mLifePoints >= 0)
+		{
+			PassOut();
+		}
+		else
+		{
+			cout << mName << "takes " << damage << " points of damage. Current life points" << mLifePoints << endl;
+		}
 	}
 	else
 	{
-		mLifePoints = mLifePoints;
+		cout << "Inside of the pokeball " << mName << " doesn't take damage!" << endl;
 	}
 }
 
-void Pokemon::Attack()
+void Pokemon::Attack(Pokemon& target, int damage)
 {
-
+	if (!inPokeball)
+	{
+		cout << mName << " attaks " << target.GetName() << " with " << damage << " damage. \n";
+		target.takeDamage(damage);
+	}
+	else
+	{
+		cout << mName << " can not attak from the pokeball." << endl;
+	}
 }
 
 void Pokemon::PassOut()
 {
-
+	cout << mName << "passes out" << endl;
+	mLifePoints = 0;
 }
 
-void Pokemon::Heal()
+void Pokemon::Heal(int healPoints)
 {
+	if (!inPokeball)
+	{
+		mLifePoints = mLifePoints + healPoints;
+		cout << mName << " is healed for " << healPoints << ", current life points: \n" << mLifePoints;
+	}
+	else
+	{
+		cout << mName << " is in Pkeball and can't be healed." << endl;
+	}
+}
 
+void Pokemon::takeDamage(int damage)
+{
+	
 }
 
 Pokemon::Pokemon(string name, string id)

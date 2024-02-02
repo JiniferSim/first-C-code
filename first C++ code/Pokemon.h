@@ -32,8 +32,9 @@ public:
 	void DisplayPokemonInfo();
 	void GetInOutPokeball();
 	void TakeDamage(int damage);
-	void Attack();
+	void Attack(Pokemon& target, int damage);
 	void PassOut();
-	void Heal();
+	void takeDamage(int damage);
+	void Heal(int healPoints);
 };
 
