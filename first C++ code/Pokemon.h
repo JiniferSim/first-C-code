@@ -11,22 +11,29 @@ private:
 	string mPokemonId;
 	string mName;
 	string mDiscribtion;
-	string mImage;
+	string imagePath;
 	int mLifePoints;
 	vector<string> capabilities;
 	bool inPokeball;
 
 public:
 	Pokemon(string name, string id);
+	Pokemon(string name);
+	Pokemon();
 	~Pokemon();
 	string GetPokemonId();
 	string GetName();
 
-	void SetImage(string image);
 	void SetID(string pokemonId);
 	void SetDiscribtion(string discribtion);
 	void SetList(string listOfCapabilities);
 	void SetLifePoints(int lifePoints);
 
+	void DisplayPokemonInfo();
+	void GetInOutPokeball();
+	void TakeDamage(int damage);
+	void Attack();
+	void PassOut();
+	void Heal();
 };
 
