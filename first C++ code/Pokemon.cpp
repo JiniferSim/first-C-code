@@ -57,7 +57,7 @@ void Pokemon::Attack(Pokemon& target, int damage)
 	if (!inPokeball)
 	{
 		cout << mName << " attaks " << target.GetName() << " with " << damage << " damage. \n";
-		target.takeDamage(damage);
+		target.TakeDamage(damage);
 	}
 	else
 	{
@@ -82,11 +82,6 @@ void Pokemon::Heal(int healPoints)
 	{
 		cout << mName << " is in Pkeball and can't be healed." << endl;
 	}
-}
-
-void Pokemon::takeDamage(int damage)
-{
-	
 }
 
 Pokemon::Pokemon(string name, string id)

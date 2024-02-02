@@ -34,7 +34,6 @@ public:
 	void TakeDamage(int damage);
 	void Attack(Pokemon& target, int damage);
 	void PassOut();
-	void takeDamage(int damage);
 	void Heal(int healPoints);
 };
 
