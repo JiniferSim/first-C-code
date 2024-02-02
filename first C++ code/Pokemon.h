@@ -27,7 +27,7 @@ public:
 	void SetID(string pokemonId);
 	void SetDiscribtion(string discribtion);
 	void SetList(string listOfCapabilities);
-	void SetLifePoints(int lifePoints);
+	void SetLifePoints();
 
 	void DisplayPokemonInfo();
 	void GetInOutPokeball();

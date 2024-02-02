@@ -14,9 +14,9 @@ void Pokemon::DisplayPokemonInfo()
 	cout << "\n";
 }
 
-void Pokemon::SetLifePoints(int lifePoints)
+void Pokemon::SetLifePoints()
 {
-
+	mLifePoints = mLifePoints;
 }
 
 void Pokemon::GetInOutPokeball()
