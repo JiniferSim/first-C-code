@@ -1,2 +1,22 @@
-﻿  Pokemon.cpp
-  first C++ code.vcxproj -> C:\Users\jane.saltsina\Documents\Scripts\first-C-code\x64\Debug\first C++ code.exe
+﻿  Ability.cpp
+  Pokemon.cpp
+  Trainer.cpp
+  first C++ code.cpp
+  Generating Code...
+Trainer.obj : error LNK2005: "public: __cdecl Pokemon::Pokemon(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Pokemon@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: __cdecl Pokemon::Pokemon(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Pokemon@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: __cdecl Pokemon::Pokemon(void)" (??0Pokemon@@QEAA@XZ) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: __cdecl Pokemon::~Pokemon(void)" (??1Pokemon@@QEAA@XZ) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::Attack(class Pokemon &,int)" (?Attack@Pokemon@@QEAAXAEAV1@H@Z) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::DisplayPokemonInfo(void)" (?DisplayPokemonInfo@Pokemon@@QEAAXXZ) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::GetInOutPokeball(void)" (?GetInOutPokeball@Pokemon@@QEAAXXZ) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Pokemon::GetName(void)" (?GetName@Pokemon@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Pokemon::GetPokemonId(void)" (?GetPokemonId@Pokemon@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::Heal(int)" (?Heal@Pokemon@@QEAAXH@Z) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::PassOut(void)" (?PassOut@Pokemon@@QEAAXXZ) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::SetDiscribtion(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?SetDiscribtion@Pokemon@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::SetID(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?SetID@Pokemon@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::SetLifePoints(void)" (?SetLifePoints@Pokemon@@QEAAXXZ) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::SetList(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?SetList@Pokemon@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) already defined in Pokemon.obj
+Trainer.obj : error LNK2005: "public: void __cdecl Pokemon::TakeDamage(int)" (?TakeDamage@Pokemon@@QEAAXH@Z) already defined in Pokemon.obj
+C:\Users\jane.saltsina\Documents\Scripts\first-C-code\x64\Debug\first C++ code.exe : fatal error LNK1169: one or more multiply defined symbols found

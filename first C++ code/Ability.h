@@ -25,8 +25,13 @@ enum PokeType
 class Ability
 {
 private:
+	int damagePoints;
+	PokeType pokeType;
+	int amountOfUses;
+	bool CanUseAbility;
 
 public:
+	
 
 };
 
