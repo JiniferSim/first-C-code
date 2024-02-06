@@ -39,9 +39,9 @@ public:
 	void rest();
 	void PerformAttack();
 
-	static const Ability TACKLE;
-	static const Ability EMBER;
-	static const Ability WATER_GUN;
-	static const Ability THUNDER_SHOCK;
+	static const Ability Punch;
+	static const Ability Shield;
+	static const Ability Gun;
+	static const Ability SuperAttack;
 };
 

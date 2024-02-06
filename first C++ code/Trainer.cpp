@@ -6,3 +6,24 @@
 
 using namespace std;
 
+void Trainer::FirstName()
+{
+
+}
+
+void Trainer::LastName()
+{
+
+}
+
+void Trainer::EarnMoney()
+{
+}
+
+void Trainer::TakeDamage()
+{
+}
+
+void Trainer::UseCatchFrase()
+{
+}
