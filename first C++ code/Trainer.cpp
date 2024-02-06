@@ -21,7 +21,7 @@ void Trainer::CapturePokemon(const Pokemon& wildPokemon)
 {
 	if (pokemonTeam.size() < 6)
 	{
-		cout << firstName << " captures " << wildPokemon.Pokemon << endl;
+		cout << firstName << " captures " /*<< wildPokemon.*/ << endl;
 		pokemonTeam.push_back(wildPokemon);
 	}
 	else
