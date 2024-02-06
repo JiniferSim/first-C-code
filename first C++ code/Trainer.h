@@ -11,9 +11,12 @@ private:
 	vector<Pokemon> pokemonTeam;
 
 public:
-	void FirstName();
-	void LastName();
-	void EarnMoney();
+	void Introduce();
+	void Challenge(const Trainer& otherTrainer) const;
+	void CapturePokemon(const Pokemon& wildPokemon);
+	void UseAbility();
+	void EarnPokeballs(int number);
+	void EarnMoney(int amount);
 	void TakeDamage();
 	void UseCatchFrase();
 
