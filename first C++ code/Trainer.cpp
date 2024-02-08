@@ -59,11 +59,11 @@ void Trainer::UseCatchFrase()
 
 void Trainer::SwitchPokemon(const string& mPokemonId)
 {
-	for (const auto& Pokemon : pokemonTeam)
+	for (Pokemon pokemon : pokemonTeam)
 	{
-		if (Pokemon.GetPokemonId() == mPokemonId)
+		if (pokemon.GetPokemonId() == mPokemonId)
 		{
-			cout << firstName << " sends out " << Pokemon.GetName() << endl;
+			cout << firstName << " sends out " << pokemon.GetName() << endl;
 			return;
 		}
 	}
