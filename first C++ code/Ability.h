@@ -26,7 +26,7 @@ class Ability
 {
 private:
 	int damagePoints;
-	PokeType pokeType;
+	PokeType pokeType; 
 	int amountOfUses;
 	bool canUseAbility;
 	int damageAmount;
@@ -39,9 +39,9 @@ public:
 	void rest();
 	void PerformAttack();
 
-	static const Ability Punch;
-	static const Ability Shield;
-	static const Ability Gun;
-	static const Ability SuperAttack;
+	static const Ability PUNCH;
+	static const Ability SHIELD;
+	static const Ability DISTANCE_ATTACK;
+	static const Ability SUPER_ATTACK;
 };
 

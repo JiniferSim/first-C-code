@@ -81,3 +81,8 @@ const
 {
 	return remainingUses > 0;
 }
+
+//const Ability Ability::PUNCH(20, Fire, 3);
+//const Ability Ability::SHIELD(0, Fire, 5);
+//const Ability Ability::DISTANCE_ATTACK(25, Fire, 2);
+//const Ability Ability::SUPER_ATTACK(30, Fire, 1);

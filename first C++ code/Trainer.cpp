@@ -26,7 +26,7 @@ void Trainer::CapturePokemon(const Pokemon& wildPokemon)
 	}
 	else
 	{
-
+		cout << "Can't capture more than 6 pokemons, your team nis full, release Pokemon if you want to capture another one." << endl;
 	}
 }
 
@@ -54,5 +54,18 @@ void Trainer::TakeDamage()
 
 void Trainer::UseCatchFrase()
 {
+	cout << firstName << " - " << catchFrase << endl;
+}
 
+void Trainer::SwitchPokemon(const string& mPokemonId)
+{
+	for (const auto& Pokemon : pokemonTeam)
+	{
+		if (Pokemon.GetPokemonId() == mPokemonId)
+		{
+			cout << firstName << " sends out " << Pokemon.GetName() << endl;
+			return;
+		}
+	}
+	cout << "Pokemon with ID " << mPokemonId << " not found in the team." << endl;
 }

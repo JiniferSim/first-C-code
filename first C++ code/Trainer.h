@@ -1,4 +1,5 @@
 #pragma once
+#include "Pokemon.h"
 class Trainer
 {
 private:
@@ -19,6 +20,6 @@ public:
 	void EarnMoney(int amount);
 	void TakeDamage();
 	void UseCatchFrase();
-
+	void SwitchPokemon(const string& mPokemonId);
 };
 
