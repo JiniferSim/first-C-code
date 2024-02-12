@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void Ability::rest()
+void Ability::rest(int restTime)
 {
 	remainingUses = initialUses;
 }
@@ -73,6 +73,54 @@ void Ability::PerformAttack()
 	else 
 	{
 		cout << "No remaining uses for this ability." << endl;
+	}
+}
+
+void Ability::ChooseAbility(/*PokeType pokeType*/ int damageAmount, int initialUses, int remainingUses, int restTime)
+{
+	cout << "Available Abilities:\n";
+
+	switch (pokeType)
+	{
+	case Fire:
+		cout << "1. Fire Fang\n";
+		cout << "2. Fire Blast\n";
+		cout << "3. Fire Punch\n";
+		cout << "3. Flamethrower\n";
+		break;
+
+		cout << "Choose an ability: ";
+		int choiceFire;
+		cin >> choiceFire;
+
+		switch (choiceFire)
+		{
+		//case 1:
+		//	FireFang(8, 3, 3, 20); // Fire Fang
+		//case 2:
+		//	FireBlast(damageAmount, initialUses, remainingUses, 15); // Fire Blast
+		//case 3:
+		//	FirePunch(damageAmount, initialUses, remainingUses, 5); // Fire Punch
+		//case 4:
+		//	Flamethrower(damageAmount, initialUses, remainingUses, 10); // Flamethrowe
+		}
+	}
+
+	switch (pokeType)
+	{
+	case Water:
+		cout << "1. Bubble\n";
+		cout << "2. Splash\n";
+		cout << "3. Water Gun\n";
+		cout << "4. Aqua Jet\n";
+
+		int choiceWater;
+		cin >> choiceWater;
+
+		switch (choiceWater)
+		{
+
+		}
 	}
 }
 

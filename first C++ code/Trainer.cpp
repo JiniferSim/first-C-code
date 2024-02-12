@@ -69,3 +69,33 @@ void Trainer::SwitchPokemon(const string& mPokemonId)
 	}
 	cout << "Pokemon with ID " << mPokemonId << " not found in the team." << endl;
 }
+
+Ability Trainer::chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses) const
+{
+	cout << "Available Abilities:\n";
+
+	switch (pokeType) 
+	{
+	case Fire:
+		cout << "1. Fire Fang\n";
+		cout << "2. Fire Blast\n";
+		cout << "3. Fire Punch\n";
+		cout << "3. Flamethrower\n";
+		break;
+	}
+	cout << "Choose an ability: ";
+	int choice;
+	std::cin >> choice;
+
+	switch (choice) 
+	{
+	case 1:
+		return Ability(8, 3, 3, Fire); // Fire Fang
+	case 2:
+		return Ability(damageAmount, initialUses, remainingUses, Fire); // Fire Blast
+	case 3:
+		return Ability(damageAmount, initialUses, remainingUses, Fire); // Fire Punch
+	case 4:
+		return Ability(damageAmount, initialUses, remainingUses, Fire); // Flamethrowe
+	}
+}
