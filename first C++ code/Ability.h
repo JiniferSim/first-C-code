@@ -33,15 +33,14 @@ private:
 	PokeType pokeType;
 	int initialUses;
 	int remainingUses;
+	/*AbilityVariant(int damageAmount, PokeType pokeType, int initialUses, int remainingUses);*/
 
 public:
 	bool canUseAbility()const;
-	void rest();
+	void rest(int restTime);
 	void PerformAttack();
+	void ChooseAbility(int damageAmount, int initialUses, int remainingUses, int restTime);
 
-	static const Ability PUNCH;
-	static const Ability SHIELD;
-	static const Ability DISTANCE_ATTACK;
-	static const Ability SUPER_ATTACK;
+	/*static const Ability::PokeType{ Fire(FireFang, FireBlast, FirePunch, Flamethrower) };*/
 };
 

@@ -21,5 +21,6 @@ public:
 	void TakeDamage();
 	void UseCatchFrase();
 	void SwitchPokemon(const string& mPokemonId);
+	Ability chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses) const;
 };
 
