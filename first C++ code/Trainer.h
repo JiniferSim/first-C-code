@@ -1,5 +1,7 @@
 #pragma once
 #include "Pokemon.h"
+#include "Ability.h"
+
 class Trainer
 {
 private:

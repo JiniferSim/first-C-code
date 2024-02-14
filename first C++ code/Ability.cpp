@@ -3,14 +3,14 @@
 
 using namespace std;
 
-void Ability::rest(int restTime)
+void Ability::Rest(int restTime)
 {
 	remainingUses = initialUses;
 }
 
 void Ability::PerformAttack()
 {
-	if (canUseAbility)
+	if (CanUseAbility())
 	{
 		cout << "Attack with " << damageAmount << " damage of pokemon type " << endl;
 		switch (pokeType)
@@ -124,8 +124,7 @@ void Ability::ChooseAbility(/*PokeType pokeType*/ int damageAmount, int initialU
 	}
 }
 
-bool Ability::canUseAbility()
-const
+bool Ability::CanUseAbility() const
 {
 	return remainingUses > 0;
 }

@@ -1,6 +1,6 @@
 #include "Pokemon.h"
 #include "Ability.h"
-#include "Ability.cpp"
+
 void Pokemon::DisplayPokemonInfo()
 {
 	cout << "Name: " << mName << endl;

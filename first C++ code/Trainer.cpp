@@ -1,8 +1,4 @@
 #include "Trainer.h"
-#include "Pokemon.h"
-#include "Pokemon.cpp"
-#include "Ability.h"
-#include "Ability.cpp"
 
 using namespace std;
 
@@ -68,4 +64,10 @@ void Trainer::SwitchPokemon(const string& mPokemonId)
 		}
 	}
 	cout << "Pokemon with ID " << mPokemonId << " not found in the team." << endl;
+}
+
+Ability Trainer::chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses) const
+{
+	//TO DO
+	return Ability();
 }
