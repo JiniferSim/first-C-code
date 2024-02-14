@@ -37,7 +37,6 @@ public:
 	bool CanUseAbility()const;
 	void Rest(int restTime);
 	void PerformAttack();
-	void ChooseAbility(int damageAmount, int initialUses, int remainingUses, int restTime);
 	/*static const Ability::PokeType{ Fire(FireFang, FireBlast, FirePunch, Flamethrower) };*/
 };
 
