@@ -16,7 +16,7 @@ private:
 	int mLifePoints;
 	vector<string> capabilities;
 	bool inPokeball;
-	AbilityInfo currentAbility;
+	//AbilityInfo currentAbility;
 
 public:
 	Pokemon(string name, string id);

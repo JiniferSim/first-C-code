@@ -2,6 +2,21 @@
 
 using namespace std;
 
+void Trainer::SetCatchFrase(string CFrase)
+{
+	catchFrase = CFrase;
+}
+
+void Trainer::SetFirstName(string fName)
+{
+	firstName = fName;
+}
+
+void Trainer::SetLastName(string lName)
+{
+	lastName = lName;
+}
+
 void Trainer::Introduce()
 {
 	cout << "Hi! I'm " << firstName << " " << lastName << ". " << catchFrase << endl;
@@ -28,7 +43,13 @@ void Trainer::CapturePokemon(const Pokemon& wildPokemon)
 
 void Trainer::UseAbility()
 {
+	cout << "Select a Pokemon to use an ability:" << endl;
+	string pokemonName;
+	cin >> pokemonName;
+	//Trainer::SwitchPokemon(const string & mPokemonId);
 
+	cout << "Select an ability for the chosen Pokemon:" << endl;
+	//Trainer::chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses) const;
 }
 
 void Trainer::EarnPokeballs(int number)
@@ -43,9 +64,10 @@ void Trainer::EarnMoney(int amount)
 	cout << firstName << " earns " << amount << " money. Total amount of money: " << money << endl;
 }
 
-void Trainer::TakeDamage()
+void Trainer::TakeDamage(int damage)
 {
-
+	lifePoints -= damage;
+	cout << firstName << " " << lastName << " takes " << damage << " damage. Life points: " << lifePoints << endl;
 }
 
 void Trainer::UseCatchFrase()

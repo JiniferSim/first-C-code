@@ -135,18 +135,18 @@ void Pokemon::ChooseAbility(int damageAmount, int initialUses, int remainingUses
 void Pokemon::ability(int damageAmount, int initialUses, int remainingUses, int restTime)
 {
 	// Save ability information to the class member variables
-	currentAbility.damageAmount = damageAmount;
+	/*currentAbility.damageAmount = damageAmount;
 	currentAbility.initialUses = initialUses;
 	currentAbility.remainingUses = remainingUses;
-	currentAbility.restTime = restTime;
+	currentAbility.restTime = restTime;*/
 }
 
 void Pokemon::displayAbilityInfo()
 {
-	cout << "Damage Amount: " << currentAbility.damageAmount << "\n";
+	/*cout << "Damage Amount: " << currentAbility.damageAmount << "\n";
 	cout << "Initial Uses: " << currentAbility.initialUses << "\n";
 	cout << "Remaining Uses: " << currentAbility.remainingUses << "\n";
-	cout << "Rest Time: " << currentAbility.restTime << "\n";
+	cout << "Rest Time: " << currentAbility.restTime << "\n";*/
 }
 
 Pokemon::Pokemon(string name, string id)

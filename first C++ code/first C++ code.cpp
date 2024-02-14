@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Pokemon.h"
+#include "Trainer.h"
 using namespace std;//To be able display the text using cout & endl / \n
 
 void EarnMoney(int* wallet, int wage)
@@ -36,11 +36,11 @@ int main()
    //EarnMoneyByRef(*bankAccount, 100);
    //cout << "Thank you for the 10000, now I have " << money;
 
-	cout << "Hello brave pokemon trainer. What is your name?" << endl;
+	/*cout << "Hello brave pokemon trainer. What is your name?" << endl;
 	string trainerName;
 	cin >> trainerName;
-	cout << "Nice to meet you " << trainerName << ", lets begin!" << endl;
-	cout << "Enter your Pokemon name:" << endl;
+	cout << "Nice to meet you " << trainerName << ", lets begin!" << endl;*/
+	/*cout << "Enter your Pokemon name:" << endl;
 	string mName;
 	cin >> mName;
 	cout << "So your first pokemon is " << mName << endl;
@@ -50,5 +50,51 @@ int main()
 	pokemon.DisplayPokemonInfo();
 	bulbazure.DisplayPokemonInfo();
 	nani.DisplayPokemonInfo();
-	pokemon.GetInOutPokeball();
+	pokemon.GetInOutPokeball();*/
+
+	Trainer player;
+	string fName, lName, CFrase, input;
+
+	cout << "Enter your response (yes/Yes): ";
+	cin >> input;
+	cout << "Enter your response (no/No): ";
+	cin >> input;
+
+	for (char& c : input) 
+	{
+		c = tolower(c);
+	}
+
+	cout << "Enter your first name: ";
+	cin >> fName;
+	player.SetFirstName(fName);
+
+	cout << "Enter your last name: ";
+	cin >> lName;
+	player.SetLastName(lName);
+
+	cout << "Hello " << fName << " " << lName << " . Welcome to my game!" << endl;
+	cout << "First, enter your catchfarse that will be used during the game: " << endl;
+	cin >> CFrase;
+	player.SetCatchFrase(CFrase);
+	cout << "Here you go! Now you ready to play (\*_*/)" << endl;
+	cout << "Do you want to use your catchfrase now?" << endl;
+	cin >> input;
+	if (input == "yes") 
+	{
+		player.UseCatchFrase();
+	}
+	else if (input == "no") 
+	{
+		cout << "Okay... (-_-)" << endl;
+	}
+	else 
+	{
+		cout << "Invalid input." << endl;
+	}
+
+	player.UseCatchFrase();
+	//player.Introduce();
+
+	return 0;
 }

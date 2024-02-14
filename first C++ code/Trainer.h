@@ -14,13 +14,16 @@ private:
 	vector<Pokemon> pokemonTeam;
 
 public:
+	void SetCatchFrase(string CFrase);
+	void SetFirstName(string fName);
+	void SetLastName(string lName);
 	void Introduce();
 	void Challenge(const Trainer& otherTrainer) const;
 	void CapturePokemon(const Pokemon& wildPokemon);
 	void UseAbility();
 	void EarnPokeballs(int number);
 	void EarnMoney(int amount);
-	void TakeDamage();
+	void TakeDamage(int damage);
 	void UseCatchFrase();
 	void SwitchPokemon(const string& mPokemonId);
 	Ability chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses) const;
