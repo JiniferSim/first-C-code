@@ -16,6 +16,7 @@ private:
 	int mLifePoints;
 	vector<string> capabilities;
 	bool inPokeball;
+	AbilityInfo currentAbility;
 
 public:
 	Pokemon(string name, string id);
@@ -36,5 +37,10 @@ public:
 	void Attack(Pokemon& target, int damage);
 	void PassOut();
 	void Heal(int healPoints);
+
+	void ChooseAbility(int damageAmount, int initialUses, int remainingUses, int restTime);
+	void ability(int damageAmount, int initialUses, int remainingUses, int restTime);
+	void displayAbilityInfo();
+	PokeType pokeType;
 };
 

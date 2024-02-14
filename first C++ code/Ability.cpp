@@ -76,7 +76,7 @@ void Ability::PerformAttack()
 	}
 }
 
-void Ability::ChooseAbility(/*PokeType pokeType*/ int damageAmount, int initialUses, int remainingUses, int restTime)
+void Ability::ChooseAbility(int damageAmount, int initialUses, int remainingUses, int restTime)
 {
 	cout << "Available Abilities:\n";
 
@@ -95,14 +95,14 @@ void Ability::ChooseAbility(/*PokeType pokeType*/ int damageAmount, int initialU
 
 		switch (choiceFire)
 		{
-		//case 1:
-		//	FireFang(8, 3, 3, 20); // Fire Fang
-		//case 2:
-		//	FireBlast(damageAmount, initialUses, remainingUses, 15); // Fire Blast
-		//case 3:
-		//	FirePunch(damageAmount, initialUses, remainingUses, 5); // Fire Punch
-		//case 4:
-		//	Flamethrower(damageAmount, initialUses, remainingUses, 10); // Flamethrowe
+		case 1:
+			Ability(8, 3, 3, 20); // Fire Fang
+		case 2:
+			Ability(damageAmount, initialUses, remainingUses, 15); // Fire Blast
+		case 3:
+			Ability(damageAmount, initialUses, remainingUses, 5); // Fire Punch
+		case 4:
+			Ability(damageAmount, initialUses, remainingUses, 10); // Flamethrowe
 		}
 	}
 
@@ -128,8 +128,3 @@ bool Ability::CanUseAbility() const
 {
 	return remainingUses > 0;
 }
-
-//const Ability Ability::PUNCH(20, Fire, 3);
-//const Ability Ability::SHIELD(0, Fire, 5);
-//const Ability Ability::DISTANCE_ATTACK(25, Fire, 2);
-//const Ability Ability::SUPER_ATTACK(30, Fire, 1);
