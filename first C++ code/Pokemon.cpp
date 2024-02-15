@@ -104,13 +104,13 @@ void Pokemon::ChooseAbility(int damageAmount, int initialUses, int remainingUses
 		switch (choiceFire)
 		{
 		case 1:
-			ability(8, 3, 3, 20); // Fire Fang
+			ability(8, 3, 3, 10); // Fire Fang
 		case 2:
-			ability(damageAmount, initialUses, remainingUses, 15); // Fire Blast
+			ability(10, 4, 4, 15); // Fire Blast
 		case 3:
-			ability(damageAmount, initialUses, remainingUses, 5); // Fire Punch
+			ability(5, 15, 15, 5); // Fire Punch
 		case 4:
-			ability(damageAmount, initialUses, remainingUses, 10); // Flamethrowe
+			ability(20, 2, 2, 30); // Flamethrowe
 		}
 	}
 
@@ -127,33 +127,38 @@ void Pokemon::ChooseAbility(int damageAmount, int initialUses, int remainingUses
 
 		switch (choiceWater)
 		{
-
+		case 1:
+			ability(8, 3, 3, 10);
+		case 2:
+			ability(10, 4, 4, 15);
+		case 3:
+			ability(5, 15, 15, 5);
+		case 4:
+			ability(20, 2, 2, 30);
 		}
 	}
 }
 
 void Pokemon::ability(int damageAmount, int initialUses, int remainingUses, int restTime)
 {
-	// Save ability information to the class member variables
-	/*currentAbility.damageAmount = damageAmount;
-	currentAbility.initialUses = initialUses;
-	currentAbility.remainingUses = remainingUses;
-	currentAbility.restTime = restTime;*/
+    damageAmount = damageAmount;
+	initialUses = initialUses;
+	remainingUses = remainingUses;
+	restTime = restTime;
 }
 
-void Pokemon::displayAbilityInfo()
-{
-	/*cout << "Damage Amount: " << currentAbility.damageAmount << "\n";
-	cout << "Initial Uses: " << currentAbility.initialUses << "\n";
-	cout << "Remaining Uses: " << currentAbility.remainingUses << "\n";
-	cout << "Rest Time: " << currentAbility.restTime << "\n";*/
-}
+//void Pokemon::displayAbilityInfo()
+//{
+//	cout << "Damage Amount: " << currentAbility.damageAmount << "\n";
+//	cout << "Initial Uses: " << currentAbility.initialUses << "\n";
+//	cout << "Remaining Uses: " << currentAbility.remainingUses << "\n";
+//	cout << "Rest Time: " << currentAbility.restTime << "\n";
+//}
 
 Pokemon::Pokemon(string name, string id)
 {
 	mName = name;
 	mPokemonId = id;
-
 }
 
 Pokemon::Pokemon(string name)
@@ -184,15 +189,15 @@ string Pokemon::GetName()
 
 void Pokemon::SetID(string pokemonId)
 {
-	
+	pokemonId = pokemonId;
 }
 
 void Pokemon::SetDiscribtion(string discribtion)
 {
-
+	discribtion = discribtion;
 }
 
 void Pokemon::SetList(string listOfCapabilities)
 {
-
+	listOfCapabilities = listOfCapabilities;
 }
