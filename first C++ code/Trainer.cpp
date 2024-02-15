@@ -94,6 +94,9 @@ string GetPokemonNameForType(PokeType pokeType) {
 		case Fire:
 			return "Charizard";
 			break;
+		case Normal:
+			return "Evee";
+			break;
 		case Water:
 			return "Greninja";
 			break;
@@ -150,6 +153,9 @@ string GetTypeName(PokeType pokeType) {
 	{
 	case Fire:
 		return "Fire";
+		break;
+	case Normal:
+		return "Normal";
 		break;
 	case Water:
 		return "Water";

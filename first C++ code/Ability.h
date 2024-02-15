@@ -4,6 +4,7 @@
 enum PokeType
 {
 	Fire,
+	Normal,
 	Water,
 	Grass,
 	Electric,
