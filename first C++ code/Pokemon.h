@@ -16,6 +16,7 @@ private:
 	int mLifePoints;
 	vector<string> capabilities;
 	bool inPokeball;
+	PokeType pokeType;
 	//AbilityInfo currentAbility;
 
 public:
@@ -41,6 +42,5 @@ public:
 	void ChooseAbility(int damageAmount, int initialUses, int remainingUses, int restTime);
 	void ability(int damageAmount, int initialUses, int remainingUses, int restTime);
 	void displayAbilityInfo();
-	PokeType pokeType;
 };
 

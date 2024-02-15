@@ -47,7 +47,7 @@ int main()
 
 	cout << fName << ", you need a team of 6 Pokemons to be able to fight other trainers." << endl;
 	cout << "Choose the types of pokemons you want (you can have inly one pokemon of each type): " << endl;
-
+	player.ChosePokemonsForTeam();
 
 	return 0;
 }
