@@ -6,6 +6,7 @@ int main()
 {
 	Trainer player;
 	string fName, lName, CFrase, input;
+	vector<Pokemon> pokemonTeam;
 
 	cout << "Enter your response (yes/Yes): ";
 	cin >> input;
@@ -48,6 +49,11 @@ int main()
 	cout << fName << ", you need a team of 6 Pokemons to be able to fight other trainers." << endl;
 	cout << "Choose the types of pokemons you want (you can have inly one pokemon of each type): " << endl;
 	player.ChosePokemonsForTeam();
+
+	cout << "Congratulations " << fName << ", now you have your team: " << endl;
+	player.ListChosenPokemons();
+
+	cout << "So what do you want to do? You can: " << endl;
 
 	return 0;
 }

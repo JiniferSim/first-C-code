@@ -28,5 +28,7 @@ public:
 	void SwitchPokemon(const string& mPokemonId);
 	void ChosePokemonsForTeam();
 	Ability chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses) const;
+
+	void ListChosenPokemons();
 };
 

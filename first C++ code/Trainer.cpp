@@ -236,6 +236,14 @@ void Trainer::ChosePokemonsForTeam()
 		//pokemonTeam.push_back(Pokemon(mPokemonId));
 }
 
+void Trainer::ListChosenPokemons() 
+{
+	for (int y = 0; y < pokemonTeam.size(); ++y) 
+	{
+		cout << y + 1 << ". " << pokemonTeam[y].GetName() << endl;
+	}
+}
+
 Ability Trainer::chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses) const
 {
 	//TO DO
