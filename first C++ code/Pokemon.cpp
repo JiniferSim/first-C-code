@@ -7,7 +7,7 @@ void Pokemon::DisplayPokemonInfo()
 	cout << "Id: " << mPokemonId << endl;
 	cout << "lifePoints " << mLifePoints << endl;
 	cout << "Capabilities: ";
-	for (const auto& capability : capabilities) 
+	for (auto& capability : capabilities) 
 	{
 	cout << " - " << capability << "\n";
 	}

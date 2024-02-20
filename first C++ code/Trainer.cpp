@@ -22,13 +22,12 @@ void Trainer::Introduce()
 	cout << "Hi! I'm " << firstName << " " << lastName << ". " << catchFrase << endl;
 }
 
-void Trainer::Challenge(const Trainer& otherTrainer)
-const
+void Trainer::Challenge(Trainer& otherTrainer)
 {
 	cout << firstName << " challenges " << otherTrainer.firstName << " to a Pokemon battle!" << endl;
 }
 
-void Trainer::CapturePokemon(const Pokemon& wildPokemon)
+void Trainer::CapturePokemon(Pokemon& wildPokemon)
 {
 	if (pokemonTeam.size() < 6)
 	{
@@ -75,7 +74,7 @@ void Trainer::UseCatchFrase()
 	cout << firstName << " - " << catchFrase << endl;
 }
 
-void Trainer::SwitchPokemon(const string& mPokemonId)
+void Trainer::SwitchPokemon(string& mPokemonId)
 {
 	for (Pokemon pokemon : pokemonTeam)
 	{
@@ -88,7 +87,8 @@ void Trainer::SwitchPokemon(const string& mPokemonId)
 	cout << "Pokemon with ID " << mPokemonId << " not found in the team." << endl;
 }
 
-string GetPokemonNameForType(PokeType pokeType) {
+string GetPokemonNameForType(PokeType pokeType) 
+{
 	switch (pokeType)
 	{
 		case Fire:
@@ -148,7 +148,8 @@ string GetPokemonNameForType(PokeType pokeType) {
 	}
 }
 
-string GetTypeName(PokeType pokeType) {
+string GetTypeName(PokeType pokeType) 
+{
 	switch (pokeType)
 	{
 	case Fire:
@@ -244,7 +245,7 @@ void Trainer::ListChosenPokemons()
 	}
 }
 
-Ability Trainer::chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses) const
+Ability Trainer::chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses)
 {
 	//TO DO
 	return Ability();
