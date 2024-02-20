@@ -107,43 +107,43 @@ string GetPokemonNameForType(PokeType pokeType) {
 			return "Pikachu";
 			break;
 		case Ice:
-			cout << "Alolan Ninetales" << endl;
+			return "Alolan Ninetales";
 			break;
 		case Fighting:
-			cout << "Lucario" << endl;
+			return "Lucario";
 			break;
 		case Poison:
-			cout << "Toxtricity" << endl;
+			return "Toxtricity";
 			break;
 		case Ground:
-			cout << "Groudon" << endl;
+			return "Groudon";
 			break;
 		case Flying:
-			cout << "Lugia" << endl;
+			return "Lugia";
 			break;
 		case Psychic:
-			cout << "Mewtwo" << endl;
+			return "Mewtwo";
 			break;
 		case Bug:
-			cout << "Scyther" << endl;
+			return "Scyther";
 			break;
 		case Rock:
-			cout << "Onix" << endl;
+			return "Onix";
 			break;
 		case Ghost:
-			cout << "Gengar" << endl;
+			return "Gengar";
 			break;
 		case Dragon:
-			cout << "Rayquaza" << endl;
+			return "Rayquaza";
 			break;
 		case Dark:
-			cout << "Tyranitar" << endl;
+			return "Tyranitar";
 			break;
 		case Steel:
-			cout << "Scizor" << endl;
+			return "Scizor";
 			break;
 		case Fairy:
-			cout << "Sylveon" << endl;
+			return "Sylveon";
 			break;
 	}
 }
