@@ -5,7 +5,11 @@ using namespace std;//To be able display the text using cout & endl / \n
 int main()
 {
 	Trainer player;
+	Trainer opponent;
 	Trainer otherTrainer;
+	Pokemon wildPokemon;
+	PokeType pokeType;
+
 	string fName, lName, CFrase, input;
 	vector<Pokemon> pokemonTeam;
 
@@ -58,7 +62,7 @@ int main()
 	int choice;
 	do {
 		cout << "1. Challenge other trainer for a battle \n";
-		cout << "2. List your chosen Pokemons\n";
+		cout << "2. Capture new Pokemon\n";
 		cout << "3. Exit\n";
 		cout << "Enter your choice: ";
 		cin >> choice;
@@ -66,9 +70,24 @@ int main()
 		switch (choice) {
 		case 1:
 			player.Challenge(otherTrainer);
+			cout << "Do you want to use your catchfrase now?" << endl;
+			cin >> input;
+			if (input == "yes")
+			{
+				player.UseCatchFrase();
+			}
+			else if (input == "no")
+			{
+				cout << "Okay... (-_-)" << endl;
+			}
+			else
+			{
+				cout << "Invalid input." << endl;
+			}
+			player.Fight(player, opponent);
 			break;
 		case 2:
-			player.ListChosenPokemons();
+			player.CapturePokemon(wildPokemon);
 			break;
 		case 3:
 			cout << "Exiting...\n";

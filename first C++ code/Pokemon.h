@@ -14,6 +14,7 @@ private:
 	string mDiscribtion;
 	string imagePath;
 	int mLifePoints;
+	int activePokemonIndex;
 	vector<string> capabilities;
 	bool inPokeball;
 	PokeType pokeType;
@@ -42,5 +43,6 @@ public:
 	void ChooseAbility(int damageAmount, int initialUses, int remainingUses, int restTime);
 	void ability(int damageAmount, int initialUses, int remainingUses, int restTime);
 	void displayAbilityInfo();
+	void AnotherPokemon();
 };
 

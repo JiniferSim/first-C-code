@@ -12,6 +12,9 @@ private:
 	int lifePoints;
 	int numberOfPokeballs;
 	vector<Pokemon> pokemonTeam;
+	vector<string> defaultNames;
+	string name;
+	int activePokemonIndex;
 
 public:
 	void SetCatchFrase(string CFrase);
@@ -28,7 +31,11 @@ public:
 	void SwitchPokemon(string& mPokemonId);
 	void ChosePokemonsForTeam();
 	Ability chooseAbility(PokeType pokeType, int damageAmount, int initialUses, int remainingUses);
-
 	void ListChosenPokemons();
+	void Fight(Trainer& player, Trainer& opponent);
+	Pokemon& GetActivePokemon(int activePokemonIndex);
+
+	void OtherTrainer(vector<string> defaultNames);
+	void DefaultNames();
 };
 
